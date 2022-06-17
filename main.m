@@ -21,7 +21,7 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         AVCaptureDeviceDiscoverySession *session = [AVCaptureDeviceDiscoverySession
-                      discoverySessionWithDeviceTypes:@[AVCaptureDeviceTypeExternalUnknown]
+                      discoverySessionWithDeviceTypes:@[AVCaptureDeviceTypeBuiltInWideAngleCamera, AVCaptureDeviceTypeExternalUnknown]
                                             mediaType:AVMediaTypeVideo
                                              position:AVCaptureDevicePositionUnspecified];
         NSArray<AVCaptureDevice *> *devices = session.devices;
